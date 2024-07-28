@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   .chat-app {
@@ -31,16 +31,30 @@ export const Container = styled.div`
       justify-content: space-between;
       align-items: center;
       margin-top: 15px;
-      textarea {
+      div {
+        display: flex;
+        flex-direction: column;
         width: 90%;
-        margin-top: 10px;
-        resize: none;
-        height: 50px;
-        outline: 0;
-        font-family: "Roboto";
-        font-size: 1rem;
-        margin: 0;
+        gap: 10px;
+        input {
+          flex: 1;
+          margin: 0;
+          outline: 0;
+          padding: 0;
+        }
+        textarea {
+          flex: 1;
+          margin-top: 10px;
+          resize: none;
+          padding: 0;
+          height: 50px;
+          outline: 0;
+          font-family: "Roboto";
+          font-size: 1rem;
+          margin: 0;
+        }
       }
+
       button {
         border-color: #4ca566;
         outline: 0;
@@ -48,8 +62,8 @@ export const Container = styled.div`
         border-radius: 100%;
         width: 50px;
         height: 50px;
-        font-weight: bold ;
+        font-weight: bold;
       }
     }
   }
-`
+`;
